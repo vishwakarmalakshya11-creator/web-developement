@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+    <title>Student Study Planner</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Study Planner</h1>
+        <p>Manage your study tasks easily.</p>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="add-task-heading">
+            <h2 id="add-task-heading">Add New Task</h2>
+
+            <form id="task-form">
+
+                <div>
+                    <label for="task-name">Task Name</label>
+                    <input type="text" id="task-name" name="task-name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select Subject</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">English</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Computer">Computer</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="due-date">Due Date</label>
+                    <input type="date" id="due-date" name="due-date" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">Select Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <button type="submit">Add Task</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="task-list-heading">
+            <h2 id="task-list-heading">My Tasks</h2>
+
+            <div id="task-list">
+                <p>No tasks added yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
